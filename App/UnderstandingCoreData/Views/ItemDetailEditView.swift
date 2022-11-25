@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ItemDetailEditView: View {
-    private let config: CoreDataChildContext<Item>
+    private let childContext: CoreDataChildContext<Item>
     private let editMode: DetailEditMode
 
-    init(config: CoreDataChildContext<Item>, editMode: DetailEditMode) {
-        self.config = config
+    init(childContext: CoreDataChildContext<Item>, editMode: DetailEditMode) {
+        self.childContext = childContext
         self.editMode = editMode
     }
 
     var body: some View {
         NavigationView {
-            ItemDetailEditForm(item: config.entity, editMode: editMode)
+            ItemDetailEditForm(item: childContext.entity, editMode: editMode)
         }
     }
 }

@@ -76,7 +76,7 @@ struct ItemListCardView: View {
         }
         .sheet(item: $editMode, onDismiss: persistData) { editMode in
             ItemDetailEditView(
-                config: .init(parentContext: viewContext),
+                childContext: .init(parentContext: viewContext),
                 editMode: editMode
             )
         }

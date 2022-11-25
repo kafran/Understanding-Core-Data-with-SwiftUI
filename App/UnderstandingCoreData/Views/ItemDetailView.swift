@@ -44,7 +44,7 @@ struct ItemDetailView: View {
         }
         .sheet(item: $itemEditMode) { editMode in
             ItemDetailEditView(
-                config: .init(editEntity: item),
+                childContext: .init(editEntity: item),
                 editMode: editMode
             )
         }
