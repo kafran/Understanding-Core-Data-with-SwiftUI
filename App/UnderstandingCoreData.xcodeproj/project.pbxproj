@@ -28,6 +28,8 @@
 		8C76A5812930E1840034F492 /* ItemDetailEditForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5772930E1840034F492 /* ItemDetailEditForm.swift */; };
 		8C76A5822930E1840034F492 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5792930E1840034F492 /* ThemePicker.swift */; };
 		8C76A5832930E1840034F492 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A57A2930E1840034F492 /* ThemeView.swift */; };
+		8C76A5852930E9600034F492 /* HistoryDetailEditForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5842930E9600034F492 /* HistoryDetailEditForm.swift */; };
+		8C76A5872930EC8D0034F492 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5862930EC8D0034F492 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		8C76A5772930E1840034F492 /* ItemDetailEditForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailEditForm.swift; sourceTree = "<group>"; };
 		8C76A5792930E1840034F492 /* ThemePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		8C76A57A2930E1840034F492 /* ThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		8C76A5842930E9600034F492 /* HistoryDetailEditForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailEditForm.swift; sourceTree = "<group>"; };
+		8C76A5862930EC8D0034F492 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			children = (
 				8C76A56C2930DFD60034F492 /* Theme.swift */,
 				8C76A56D2930DFD60034F492 /* DetailEditMode.swift */,
+				8C76A5862930EC8D0034F492 /* Currency.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,12 +136,13 @@
 			isa = PBXGroup;
 			children = (
 				8C76A5782930E1840034F492 /* Theme Picker */,
-				8C76A5722930E1840034F492 /* ItemDetailView.swift */,
 				8C76A5732930E1840034F492 /* ItemListCardView.swift */,
-				8C76A5742930E1840034F492 /* HistoryDetailEditView.swift */,
-				8C76A5752930E1840034F492 /* ItemDetailEditView.swift */,
 				8C76A5762930E1840034F492 /* ItemCardView.swift */,
+				8C76A5752930E1840034F492 /* ItemDetailEditView.swift */,
 				8C76A5772930E1840034F492 /* ItemDetailEditForm.swift */,
+				8C76A5722930E1840034F492 /* ItemDetailView.swift */,
+				8C76A5742930E1840034F492 /* HistoryDetailEditView.swift */,
+				8C76A5842930E9600034F492 /* HistoryDetailEditForm.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,8 +235,10 @@
 				8C76A5822930E1840034F492 /* ThemePicker.swift in Sources */,
 				8C76A57F2930E1840034F492 /* ItemDetailEditView.swift in Sources */,
 				8C76A56E2930DFD60034F492 /* Theme.swift in Sources */,
+				8C76A5852930E9600034F492 /* HistoryDetailEditForm.swift in Sources */,
 				8C76A5622930DF120034F492 /* UnderstandingCoreData.xcdatamodeld in Sources */,
 				8C76A57E2930E1840034F492 /* HistoryDetailEditView.swift in Sources */,
+				8C76A5872930EC8D0034F492 /* Currency.swift in Sources */,
 				8C76A56A2930DF8E0034F492 /* Binding+Optionals.swift in Sources */,
 				8C496A582930D9E300D36131 /* Persistence.swift in Sources */,
 				8C76A5642930DF660034F492 /* History+CoreDataClass.swift in Sources */,

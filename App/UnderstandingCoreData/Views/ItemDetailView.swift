@@ -42,17 +42,24 @@ struct ItemDetailView: View {
                 }
             }
         }
-        .sheet(item: $itemEditMode) { editMode in
+        .sheet(item: $itemEditMode, onDismiss: persistData) { editMode in
             ItemDetailEditView(
                 childContext: .init(editEntity: item),
                 editMode: editMode
             )
         }
-        .sheet(item: $historyEditMode) { editMode in
-            HistoryDetailEditView()
-                .presentationDetents([.medium])
+        .sheet(item: $historyEditMode, onDismiss: persistData) { editMode in
+            HistoryDetailEditView(
+                itemChildContext: .init(editEntity: item),
+                editMode: editMode
+            )
+            .presentationDetents([.medium])
         }
         .navigationTitle(item.nameString)
+    }
+    
+    private func persistData() {
+        PersistenceController.shared.save()
     }
 }
 
