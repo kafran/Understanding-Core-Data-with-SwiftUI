@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct UnderstandingCoreDataApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationView {
+                ItemListCardView()
+                    .environment(
+                        \.managedObjectContext,
+                        PersistenceController.shared.container.viewContext
+                    )
+            }
         }
     }
 }
