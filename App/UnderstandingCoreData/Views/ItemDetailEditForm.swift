@@ -15,7 +15,7 @@ struct ItemDetailEditForm: View {
     var body: some View {
         Form {
             Section(header: Text("Item Info")) {
-                TextField("Name", text: .init($item.name, ""))
+                TextField("Name", text: $item.nameString)
                 ThemePicker(selection: $item.themeEnum)
             }
         }

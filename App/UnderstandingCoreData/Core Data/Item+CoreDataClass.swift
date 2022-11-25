@@ -19,7 +19,8 @@ extension Item {
 //    }
 
     var nameString: String {
-        name ?? "Unknown Item"
+        get { name ?? "" }
+        set { name = newValue }
     }
 
     var itemHistory: [History] {
