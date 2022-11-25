@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ItemCardView: View {
-    let item: Item
+    @ObservedObject var item: Item
     let currency = Locale.current.currency?.identifier ?? "BRL"
 
     private var totalQuantity: Int {
