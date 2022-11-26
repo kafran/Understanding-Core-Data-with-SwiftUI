@@ -17,11 +17,6 @@ struct HistoryDetailEditForm: View {
         history.quantity <= 1 ? "item" : "items"
     }
 
-    var total: Double {
-        // FIXME: Remove this nil-coalescing
-        Double(history.quantity) * (history.price?.doubleValue ?? 0.0)
-    }
-
     var body: some View {
         VStack {
             Form {
@@ -33,10 +28,7 @@ struct HistoryDetailEditForm: View {
                     )
                     TextField(
                         "Price",
-                        value: .init(
-                            get: { history.price as? Decimal },
-                            set: { history.price = $0 as? NSDecimalNumber }
-                        ),
+                        value: $history.priceDecimal,
                         format: .currency(code: Currency.code)
                     )
                     .keyboardType(.decimalPad)
@@ -46,7 +38,7 @@ struct HistoryDetailEditForm: View {
                 HStack {
                     Text("Total")
                     Spacer()
-                    Text(self.total, format: .currency(code: Currency.code))
+                    Text(history.total, format: .currency(code: Currency.code))
                 }
             }
             .padding()

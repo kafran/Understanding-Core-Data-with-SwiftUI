@@ -16,6 +16,11 @@ public class History: NSManagedObject {
 
 extension History {
     var priceDecimal: Decimal {
-        self.price as? Decimal ?? Decimal(0)
+        get { self.price as? Decimal ?? Decimal(0.0) }
+        set { self.price = newValue as NSDecimalNumber }
+    }
+    
+    var total: Decimal {
+        Decimal(self.quantity) * self.priceDecimal
     }
 }

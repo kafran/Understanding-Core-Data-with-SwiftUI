@@ -14,11 +14,11 @@ struct ItemDetailView: View {
     @State var itemEditMode: DetailEditMode?
     @State var historyEditMode: DetailEditMode?
     
-    private var totalPrice: Decimal {
-        item.itemHistory.reduce(0) { result, history in
-            result + history.priceDecimal
-        }
-    }
+//    private var totalPrice: Decimal {
+//        item.itemHistory.reduce(0) { result, history in
+//            result + history.priceDecimal
+//        }
+//    }
 
     var body: some View {
         List {
@@ -27,7 +27,7 @@ struct ItemDetailView: View {
                     HStack {
                         Text(history.date?.formatted() ?? "Unknown Date")
                         Spacer()
-                        Text("Total: \(totalPrice, format: .currency(code: Currency.code))")
+                        Text("Total: \(history.total, format: .currency(code: Currency.code))")
                     }
                 }
 

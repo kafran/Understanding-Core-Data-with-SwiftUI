@@ -19,7 +19,7 @@ struct ItemCardView: View {
 
     private var totalPrice: Decimal {
         item.itemHistory.reduce(0) { result, history in
-            result + history.priceDecimal
+            result + history.total
         }
     }
 
