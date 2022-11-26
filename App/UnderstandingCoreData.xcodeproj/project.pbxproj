@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1489D5293210B800E4BA7A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8C1489D4293210B800E4BA7A /* .gitignore */; };
+		8C1489D829323E5100E4BA7A /* UnderstandingCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C1489D629323E5100E4BA7A /* UnderstandingCoreData.xcdatamodeld */; };
 		8C496A4F2930D9E100D36131 /* UnderstandingCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C496A4E2930D9E100D36131 /* UnderstandingCoreDataApp.swift */; };
 		8C496A532930D9E300D36131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C496A522930D9E300D36131 /* Assets.xcassets */; };
 		8C496A562930D9E300D36131 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C496A552930D9E300D36131 /* Preview Assets.xcassets */; };
 		8C496A582930D9E300D36131 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C496A572930D9E300D36131 /* Persistence.swift */; };
 		8C76A5582930DDE50034F492 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C76A5562930DDE50034F492 /* README.md */; };
 		8C76A5592930DDE50034F492 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8C76A5572930DDE50034F492 /* LICENSE */; };
-		8C76A5622930DF120034F492 /* UnderstandingCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5602930DF120034F492 /* UnderstandingCoreData.xcdatamodeld */; };
 		8C76A5642930DF660034F492 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5632930DF660034F492 /* History+CoreDataClass.swift */; };
 		8C76A5672930DF770034F492 /* CoreDataChildContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5652930DF770034F492 /* CoreDataChildContext.swift */; };
 		8C76A5682930DF770034F492 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76A5662930DF770034F492 /* Item+CoreDataClass.swift */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C1489D4293210B800E4BA7A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		8C1489D729323E5100E4BA7A /* UnderstandingCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnderstandingCoreData.xcdatamodel; sourceTree = "<group>"; };
 		8C496A4B2930D9E100D36131 /* UnderstandingCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderstandingCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C496A4E2930D9E100D36131 /* UnderstandingCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderstandingCoreDataApp.swift; sourceTree = "<group>"; };
 		8C496A522930D9E300D36131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,7 +43,6 @@
 		8C496A572930D9E300D36131 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		8C76A5562930DDE50034F492 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8C76A5572930DDE50034F492 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8C76A5612930DF120034F492 /* UnderstandingCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnderstandingCoreData.xcdatamodel; sourceTree = "<group>"; };
 		8C76A5632930DF660034F492 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8C76A5652930DF770034F492 /* CoreDataChildContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataChildContext.swift; sourceTree = "<group>"; };
 		8C76A5662930DF770034F492 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		8C496A422930D9E100D36131 = {
 			isa = PBXGroup;
 			children = (
+				8C1489D4293210B800E4BA7A /* .gitignore */,
 				8C76A5572930DDE50034F492 /* LICENSE */,
 				8C76A5562930DDE50034F492 /* README.md */,
 				8C496A4D2930D9E100D36131 /* UnderstandingCoreData */,
@@ -112,12 +115,12 @@
 		8C76A55D2930DEEC0034F492 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				8C1489D629323E5100E4BA7A /* UnderstandingCoreData.xcdatamodeld */,
 				8C76A5692930DF8E0034F492 /* Binding+Optionals.swift */,
 				8C76A5652930DF770034F492 /* CoreDataChildContext.swift */,
 				8C76A5662930DF770034F492 /* Item+CoreDataClass.swift */,
 				8C76A5632930DF660034F492 /* History+CoreDataClass.swift */,
 				8C496A572930D9E300D36131 /* Persistence.swift */,
-				8C76A5602930DF120034F492 /* UnderstandingCoreData.xcdatamodeld */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1489D5293210B800E4BA7A /* .gitignore in Resources */,
 				8C76A5582930DDE50034F492 /* README.md in Resources */,
 				8C496A562930D9E300D36131 /* Preview Assets.xcassets in Resources */,
 				8C76A5592930DDE50034F492 /* LICENSE in Resources */,
@@ -236,13 +240,13 @@
 				8C76A57F2930E1840034F492 /* ItemDetailEditView.swift in Sources */,
 				8C76A56E2930DFD60034F492 /* Theme.swift in Sources */,
 				8C76A5852930E9600034F492 /* HistoryDetailEditForm.swift in Sources */,
-				8C76A5622930DF120034F492 /* UnderstandingCoreData.xcdatamodeld in Sources */,
 				8C76A57E2930E1840034F492 /* HistoryDetailEditView.swift in Sources */,
 				8C76A5872930EC8D0034F492 /* Currency.swift in Sources */,
 				8C76A56A2930DF8E0034F492 /* Binding+Optionals.swift in Sources */,
 				8C496A582930D9E300D36131 /* Persistence.swift in Sources */,
 				8C76A5642930DF660034F492 /* History+CoreDataClass.swift in Sources */,
 				8C496A4F2930D9E100D36131 /* UnderstandingCoreDataApp.swift in Sources */,
+				8C1489D829323E5100E4BA7A /* UnderstandingCoreData.xcdatamodeld in Sources */,
 				8C76A5672930DF770034F492 /* CoreDataChildContext.swift in Sources */,
 				8C76A5682930DF770034F492 /* Item+CoreDataClass.swift in Sources */,
 				8C76A56F2930DFD60034F492 /* DetailEditMode.swift in Sources */,
@@ -449,14 +453,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8C76A5602930DF120034F492 /* UnderstandingCoreData.xcdatamodeld */ = {
+		8C1489D629323E5100E4BA7A /* UnderstandingCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8C76A5612930DF120034F492 /* UnderstandingCoreData.xcdatamodel */,
+				8C1489D729323E5100E4BA7A /* UnderstandingCoreData.xcdatamodel */,
 			);
-			currentVersion = 8C76A5612930DF120034F492 /* UnderstandingCoreData.xcdatamodel */;
-			name = UnderstandingCoreData.xcdatamodeld;
-			path = "../../../../UnderstandingCoreData/UnderstandingCoreData/Core Data/UnderstandingCoreData.xcdatamodeld";
+			currentVersion = 8C1489D729323E5100E4BA7A /* UnderstandingCoreData.xcdatamodel */;
+			path = UnderstandingCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
